@@ -8,7 +8,10 @@ export default function Index () {
   })
   const openPageA = () => {
     Taro.navigateTo({
-      url: '/pages/pageA/index'
+      url: '/pages/pageA/index',
+      success: (res) => {
+        console.log('go to pageA success', res)
+      }
     })
   }
 
